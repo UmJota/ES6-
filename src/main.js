@@ -14,7 +14,7 @@ const aluno5 = new Aluno('Guilherme', 8);
 const alunos = [aluno1, aluno2, aluno3, aluno4, aluno5];
 
 const media = alunos.filter(function(aluno) {
-    return aluno.nota > 5;
+    return aluno.nota >= 6;
 }).map(function(aluno) {
     return aluno.nome;
 });
